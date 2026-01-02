@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-sand-100 text-charcoal-500 font-sans antialiased transition-colors duration-300 dark:bg-charcoal-900 dark:text-sand-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold dark:text-sand-50;
+  }
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-sage-200 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-sage-300;
+}
